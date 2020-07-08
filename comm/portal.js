@@ -1,0 +1,15 @@
+const Discord = require("discord.js")
+exports.run = (client, message, args) => {
+ const embed = new Discord.RichEmbed()
+  .setAuthor ("Andrew | Portal", client.user.avatarURL)
+  .setDescription("**Andrew** ``¿Escuchas este nombre y que es lo que piensas?`` bueno es una comunidad sobre Andrew y no solo eso esta basado en nuestra pagina web sobre Andrew y en esta comunidad puedes hacer amigos, sin estar molestando a nadie y ni ser molestado y tenemos muchas ventajas, en lo siguiente, veras más información de nuestro servidor, esperamos que te guste. Esta es una comunidad anime, gaming y lo más importante, es un chat social para hacer amigos. espero que te guste nuestra comunidad y no te olvides cualquier error avisennos!")
+ .setTitle("``🎌`` ¡Unete al portal Andrew!")
+ .addField("``🌐`` Página web", "[Click aquí]()")
+ .addField("``🔗`` Servidor de Discord", "[Click aquí]()")
+ .setColor("RANDOM")
+ .setFooter("Portal para"+ message.guild)
+ .setImage("https://imgur.com/bFtZ67L.gif")
+ .setThumbnail("https://imgur.com/9uHJBXl.png")
+ .setTimestamp("¡Entren ya! Hacemos muchos sorteos y dropeos!  ``")
+ message.channel.send(embed)
+}

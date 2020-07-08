@@ -1,0 +1,157 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+       <link rel="stylesheet" href="/style.css">
+      <script type="text/javascript">function add_chatinline(){var hccid=77883800;var nt=document.createElement("script");nt.async=true;nt.src="https://mylivechat.com/chatinline.aspx?hccid="+hccid;var ct=document.getElementsByTagName("script")[0];ct.parentNode.insertBefore(nt,ct);}
+add_chatinline(); </script>
+      
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+   <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      
+      
+      <style>
+body {
+        background-image: url("https://cdn.glitch.com/8cc66a52-36d8-41d8-943f-adf15297e2c5%2FeS4IxK3.png?v=1563217886836");
+  
+  
+} 
+ 
+</style>
+    
+    <script>$('.button-collapse').sideNav({
+      menuWidth: 300, // Default is 240
+      closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+    }
+  );</script>
+    
+    
+     <script type = "text/javascript"  
+         src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>             
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">  
+      </script> 
+      
+    <body>   
+      
+      
+  <nav>
+    <nav class="blue-grey darken-4">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo"><%= `${user.username}` %></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="/logout" class="waves-effect waves-light btn bg-btn"><i class="material-icons left ">account_circle</i>Logout</a></li>
+        <li><a href="/staff">Staff</a></li>
+      </ul>
+    </div>
+  </nav>
+    
+   <div class="row">
+        <div class="s12 m4 l2">
+      
+          <pre>
+          </pre>
+          
+          
+            <div class="a">
+              
+              
+              <% if(user.avatar) { %>
+            <img class="circle responsive-img" src="https://cdn.discordapp.com/avatars/<%=user.id%>/<%=user.avatar%>.png?size=512" width="200px" height="200px" alt="">
+            <% } else { %> 
+            <img class="circle responsive-img" src="https://images-ext-1.discordapp.net/external/NAqkMZNPJgDiWBrSDqniAD1_sbWfiPqF4mgZyCtVs6s/https/discordapp.com/assets/6debd47ed13483642cf09e832ed0bc1b.png?width=231&height=231" width="200px" height="200px" alt="">
+            <% } %>
+              <pre></pre>
+      <textitle><%= `${user.username}` %></textitle>  
+              <p><%= `${premium}` %></p>
+              <pre></pre>
+              <status><%= `${stat}` %></status>
+                <pre></pre>
+                <a class="waves-effect waves-light btn-large light-blue" href="#servers" onclick="openCity(event, 'server')"><i class="material-icons left">cloud</i>Servidores</a>  
+              <a class="waves-effect waves-light btn-large black" href="/error404"><i class="material-icons left">edit</i>Editar</a>  
+              
+
+              
+              
+              
+         
+
+              
+          
+      </div>
+      </div>
+    </div>
+    
+    <pre> </pre>
+
+     
+     
+     
+                <div class="row">
+    <div class="col s12 m4 l2">
+      <textitle>Dinero:</textitle>  
+      <pre></pre>
+                 <status></status> 
+                  </div>
+    <div class="col s12 m4 l2">
+ <textitle>Siguiendo:</textitle> 
+      <pre></pre>
+      <status><%= `${following}` %></status>
+    
+                  </div>
+    <div class="col s12 m4 l2">
+                   <textitle>Seguidores:</textitle> 
+      <pre></pre>
+      <status><%= `${followers}` %></status>
+                  </div>
+   <status></status>
+  </div>   
+           
+
+           
+
+
+    
+    
+    
+   
+    
+  
+
+    
+
+    
+    
+      
+
+      
+          
+         
+         
+      
+      
+      
+
+      
+
+      
+      
+    </body>
+      
+      
+  </html>

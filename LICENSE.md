@@ -7,7 +7,9 @@ o semenjante, al igual si sus archivos son similares o identicos, al igual se pr
 venta de este Sofware y de sus archivos que los componenen, y se prohibe la suplantacion de
 identidad hacia el bot (Se prohibe que se copien del nombre del bot) 
 
-Este bot **no** puede ser copiado sin confirmacion del Owner oficial.
+Este bot **no** puede ser copiado sin confirmacion del Owner oficial. En caso que el Owner
+oficial de permisos de copia, este debererá tener los mismos beneficios y ser parte del equipo
+administrativo.
 
 
 Cualquier copia de este producto sera reportado a autoridades o servicios (Discord)
